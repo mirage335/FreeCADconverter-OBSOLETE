@@ -1,10 +1,10 @@
 Converts generic 3D models (STEP, IGES, etc) to FreeCAD documents (FCSTD).
 
 #Usage
-./freecadBatch <inFile> <outFile>
+./FreeCADconverter <inFile> <outFile>
 
 export PATH="$PATH:$PWD"
-find . -type f -name '*.step' -exec freecadBatch {} {}.fcstd \;
+find . -type f -name '*.step' -exec FreeCADconverter {} {}.fcstd \;
 
 #Cavets
 Converted parts visibilty defaults to false.
